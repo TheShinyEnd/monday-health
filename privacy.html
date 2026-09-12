@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monday - Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 48px 20px;
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+    max-width: 42rem; margin-inline: auto;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: .25rem; }
+  .sub { opacity: .65; margin-top: 0; }
+  h2 { font-size: 1.05rem; margin-top: 2.2rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Monday. Last updated 12 September 2026.</p>
+
+  <p>
+    Monday is a personal application with a single user, its author. It
+    is not published to an app store and has no other users, no
+    analytics, no advertising and no third-party trackers.
+  </p>
+
+  <h2>What it accesses</h2>
+  <p>
+    With the user's explicit consent, Monday reads that user's own
+    health data from the Google Health API, under these scopes:
+  </p>
+  <ul>
+    <li><code>googlehealth.ecg.readonly</code>, for electrocardiogram readings recorded by the user's watch.</li>
+    <li><code>googlehealth.health_metrics_and_measurements.readonly</code>, for the vital sign measurements shown alongside them.</li>
+  </ul>
+  <p>
+    Both are read-only. Monday never writes to, modifies or deletes
+    anything held in a Google account.
+  </p>
+
+  <h2>Why</h2>
+  <p>
+    To compute heart rate variability from the raw electrocardiogram
+    waveform, and to show recent vital signs on the user's watch. The
+    measurement happens so that the numbers come from a signal that can
+    be inspected rather than from an opaque daily summary.
+  </p>
+
+  <h2>Where it goes</h2>
+  <p>
+    Nowhere. Health data is requested by the user's own phone, analysed
+    on that phone, and displayed on that phone and its paired watch. It
+    is not uploaded to any server operated by the author, is not shared
+    with any third party, is not sold, and is not used to train any
+    model.
+  </p>
+
+  <h2>Credentials and retention</h2>
+  <p>
+    OAuth tokens are stored only on the user's device, in Android's
+    encrypted preferences, protected by a key held in the device
+    keystore. Health readings are held in memory for the duration of a
+    request and are not written to a database or a log. No copy of the
+    data outlives the screen that shows it.
+  </p>
+
+  <h2>Withdrawing access</h2>
+  <p>
+    Access can be revoked at any time at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+    which immediately and permanently stops Monday from reading anything
+    further. Clearing the app's data removes the stored tokens from the
+    device.
+  </p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:theshinyend@gmail.com">theshinyend@gmail.com</a></p>
+</body>
+</html>
